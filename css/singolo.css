@@ -1,0 +1,49 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+#container{
+    width: 980px;
+    margin: 0 auto;
+}
+nav, #portafolio, footer{
+    background-color: #2d303a;
+}
+#slider, #contact{
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+#services, #about{
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+/* Sprites */
+.social_bar span{
+    width: 32px; 
+    height: 32px;
+    display: inline-block;
+}
+#about .social_bar span{
+    background: url('../images/social_sprite.png') no-repeat top left; 
+}
+footer .social_bar span{
+    background: url('../images/footer_sprite.png') no-repeat top left; 
+}
+#about .social_bar span.facebook, footer .social_bar span.facebook { background-position: 0px 0px;  } 
+#about .social_bar span.google, footer .social_bar span.google { background-position: -42px 0px;  } 
+#about .social_bar span.linkedin, footer .social_bar span.linkedin { background-position: -84px 0px;  } 
+#about .social_bar span.twitter, footer .social_bar span.twitter { background-position: -126px 0px;  } 
+#contact_info li span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../images/contact_sprite.png') no-repeat top left;
+}
+#contact_info li span.location{
+    background-position: 0px 0px;
+}
+#contact_info li span.phone{
+    background-position: 0px -20px;
+}
+#contact_info li span.mail{
+    background-position: 0px -40px;
+}
