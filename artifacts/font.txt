@@ -1,0 +1,9 @@
+Este proyecto utiliza la fuente Lato, agregar en su html
+<link rel="stylesheet" href="css/reset.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'><!-- Agregar esta línea -->
+<link rel="stylesheet" href="css/mi_hija_de-estilos.css">
+
+Despues en su hoja de estilos:
+body{
+	font-family: 'Lato', sans-serif;
+}
