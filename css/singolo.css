@@ -1,8 +1,11 @@
 /* Estilos generales */
-body{
+body, input, textarea{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     text-align: justify;
+}
+p{
+    line-height: 26px;
 }
 #container{
     width: 980px;
@@ -15,6 +18,7 @@ nav, #portafolio, footer{
 #slider, #contact{
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+    color: #f0d8d9;
 }
 #services, #about{
     background-color: #f2f2f2;
@@ -37,6 +41,7 @@ h3{ font-size: 18px; }
     width: 32px; 
     height: 32px;
     display: inline-block;
+    margin: 0 5px;
 }
 #about .social_bar span{ background: url('../images/social_sprite.png') no-repeat top left; }
 footer .social_bar span{ background: url('../images/footer_sprite.png') no-repeat top left; }
@@ -107,4 +112,107 @@ nav ul li a{
 }
 .service_description p{
     margin-top: 15px;
+}
+/* Portafolio */
+#portafolio ul{
+    margin: 20px 0;
+}
+#portafolio ul li{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #666d89;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+#portafolio ul li:first-child{
+    margin-left: 0;
+}
+#portafolio ul li a{
+    color: #666d89;
+    text-decoration: none;
+}
+#portafolio ul li.active{
+    border-color: #dedede;
+}
+#portafolio ul li.active a{
+    color: #dedede;
+}
+#portafolio_images{
+    margin: 0 -15px;
+}
+#portafolio_images img{
+    margin: 5px;
+}
+/* About */
+#team{
+    margin: 50px -15px 50px -25px;
+}
+#team .member{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+#team .member:first-child{
+    margin-left: 15px;
+}
+#team .member h3{
+    margin: 15px 0;
+}
+#team .member p{
+    margin-bottom: 30px;
+}
+/* Contact */
+#contact input, #contact textarea{
+    background-color: #d6564f;
+    border: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    width: 540px;
+    color: #f48c8f;
+}
+#contact textarea{
+    resize:none;
+}
+#contact_methods{
+    margin: 40px 0;
+}
+#contact_methods div{
+    display: inline-block;
+    vertical-align: top;
+}
+#contact_form{
+    width: 560px;
+}
+#contact_info{
+    margin-left: 20px;
+    width: 310px;
+}
+#contact_info h3{
+    margin: 10px 0 20px;
+}
+#contact_info ul{
+    margin-top: 30px;
+}
+#contact_info li{
+    margin: 5px 0;
+}
+#contact_info li span{
+    margin-right: 5px;
+}
+/* Footer */
+footer{
+    padding: 20px 40px;
+}
+footer p, footer .social_bar{
+    display: inline-block;
+    vertical-align: top;
+}
+footer p{
+    width: 730px;
 }
