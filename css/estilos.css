@@ -34,7 +34,7 @@ body
 }
 .container nav ul li
 {
-	cursor: pointer;
+	cursor: pointer; /* Consecuencia de no usar el elemento anchor en el menu */
 	display: inline-block;
 	padding: 20px 10px 25px;
 }
@@ -57,7 +57,7 @@ body
 }
 .services_desc
 {
-	padding: 10px;
+	padding: 10px; /* Elemento #1 */
 }
 .services_desc h3
 {
@@ -83,7 +83,7 @@ body
 	border: 1px solid #666D88;
 	border-radius: 5px;
 	margin-bottom: 15px;
-	cursor: pointer;
+	cursor: pointer; /* Consecuencia del uso de los input en vez de enlaces */
 }
 .active_boton
 {
@@ -92,7 +92,7 @@ body
 }
 .galeria 
 {
-	padding: 10px;
+	padding: 10px; /* Elemento #2 */
 }
 .galeria img
 {
@@ -134,7 +134,7 @@ body
 .formulario input
 {
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px 20px; /* Elemento 2 #1 */
 	background: #D7564F;
 	border: 1px solid #D7564F;
 	margin-top: 15px;
@@ -146,14 +146,14 @@ body
 	width: 100%;
 	max-width: 100%;
 	min-height: 300px;
-	padding: 10px 20px;
+	padding: 10px 20px; /* Elemento 2 #2 */
 	background: #D7564F;
 	border: 1px solid #D7564F;
 	margin-top: 15px;
 	color: #F37E80;
 	border-radius: 6px;
 }
-::-webkit-input-placeholder
+::-webkit-input-placeholder /* Estas propiedades se pueden optimizar */
 {
 	color: #F37E80;
 }
@@ -169,6 +169,11 @@ body
 {  
       color: #F37E80;  
 }
+/*
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder{
+    color: #F37E80; 
+}
+*/
 .contact p
 {
 	font-size: 10px;
@@ -176,8 +181,8 @@ body
 }
 .contact img
 {
-	cursor: pointer;
-	margin-right: 5px;
+	cursor: pointer; /* ¿Porqué usar un puntero? Los elementos no son enlaces. */   
+	margin-right: 5px; 
 	float: left;
 	width: 20px;
 	height: 20px;
@@ -190,11 +195,18 @@ body
 }
 .img_footer
 {
-	cursor: pointer;	
+	cursor: pointer; /* ¿Porqué usar un puntero? Los elementos no son enlaces. */	
 	margin-top: -10px;
 	width: 18%;
 	float: right;
 }
-
-
-
+/*
+Elemento #1, Elemento #2
+.services_desc, .galeria{
+	padding: 10px;
+}
+Elemento 2 #1, Elemento 2 #2
+.formulario input, .formulario textarea{
+    padding: 10px 20px;
+}
+*/
