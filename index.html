@@ -10,7 +10,18 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/CSS_Singolo.css">
-
+    
+    <!-- Estilos sugeridos para ordenar el diseño -->
+    <style type="text/css">
+        .ImgSector1{
+            margin: 30px 18px;
+        }
+        #Portfolio{
+            background-color: #2d303a;
+            color: #666d89;
+        }
+    </style>
+    <!-- Se recomenda utilizar estilos, clases y nombres de archivos en minúsculas -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +32,7 @@
     
   </head>
   <body>
-    <div class="col-sm-12">
+    <div class="col-sm-12"><!-- Por convención en Bootstrap se utiliza la clase container o fluid-container para el contenedor principal del documento. -->
 
       <header>
 
@@ -43,13 +54,12 @@
           </div>
         </div>
         <div class="row">
-          <img src="img/Carusel.jpg"/>
+          <img src="img/Carusel.jpg"/><!-- El carousel no va en el header -->
         </div>  
-      </header> 
-
+      </header>
 <div id="OurServices">
-  <div class="col-sm-12">
-     <div id="Seccion_1">
+  <div class="col-sm-12"><!-- Esta clase podria ir en el div padre y eliminar este -->
+     <div id="Seccion_1"><!-- Este div tambien deberia llevar col-sm-12  o una clase row -->
       <h2>Our Services</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus enim nec felis semper consectetur. In dignissim, libero eget vehicula laoreet, ante sem accumsan magna, nec mollis dolor magna ut velit. Vivamus non diam eros. Duis tincidunt vestibulum felis eu malesuada. Morbi vitae pharetra magna, vel fringilla justo. Pellentesque at ante feugiat, malesuada nunc eget, commodo neque.</p>
     </div>
@@ -57,16 +67,27 @@
 
 
     <div class="row">
+        <!-- Sugerencia de construccion de estos elementos
+        <div class="col-sm-3">
+            <div class="sector">
+                <img src="img/lapiz.jpg">    
+            </div>
+            <div>
+                <h2>Custom Desig</h2>
+                <p>Proin auctor dui ut sodales suscipit. Maecenas tristique rhoncus tempus. Pellentesque fringilla vitae sapien pulvinar scelerisque.</p>    
+            </div> 
+        </div>
+        Fin de la sugerencia -->
         <a href="#"><div id="sector1" class="col-sm-1">
-          <img class="ImgSector1" src="img/lapiz.jpg">
+          <img class="ImgSector1" src="img/lapiz.jpg"><!-- Cuidar que el tamaño de este tipo de imágenes de bloques semejantes sean del mismo tamaño -->
          </div></a>
       <div class="col-sm-3">
         <h2>Custom Desig</h2>
         <p>Proin auctor dui ut sodales suscipit. Maecenas tristique rhoncus tempus. Pellentesque fringilla vitae sapien pulvinar scelerisque.</p>
       </div>
 
-        <a href="#"><div  id="sector1" class="col-sm-1">
-          <img class="ImgSector1" src="img/foco.jpg">
+        <a href="#"><div  id="sector1" class="col-sm-1"><!-- No se puede usar un ID mas de una vez -->
+          <img class="ImgSector1" src="img/foco.jpg"><!-- ¿Para qué usar una clase en este elemento? -->
          </div></a>
       <div class="col-sm-3">
       <h2>Inovative Ideas</h2>
