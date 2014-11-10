@@ -1,0 +1,200 @@
+body
+{
+	font-size: 13px;
+	min-width: 630px;
+}
+.container 
+{
+	background-color:  #F16C65;
+}
+.content_nav
+{
+	background:  #2b3346;
+	height: 80px;
+}
+#logo h1
+{
+	width: 150px;
+	color:white;
+	font-size: 30px;
+}
+#logo span
+{
+	color: #ee7b7b;
+}
+.container nav 
+{
+	color:white;
+	float: right;
+	width: 440px;
+}
+.container ul
+{
+	width: 440px;
+}
+.container nav ul li
+{
+	cursor: pointer;
+	display: inline-block;
+	padding: 20px 10px 25px;
+}
+.our_services
+{
+	padding: 0 30px;
+	background:#eee;
+	color: #666D88;
+	padding-bottom: 50px;
+}
+.services_img img
+{
+	width: 100%;
+	padding: 0px;
+	margin-top: 10px;
+}
+.services
+{	
+	margin-bottom: 20px;
+}
+.services_desc
+{
+	padding: 10px;
+}
+.services_desc h3
+{
+	margin-top: -5px;
+	font-size: 14px;
+}
+.services_desc p
+{
+	font-size: 10px;
+	text-align: justify;
+}
+.portfolio
+{	
+	background: #2D2F3B;
+	color:#666D88;
+	padding: 30px 30px 70px;
+}
+.boton_portfolio
+{
+	background: transparent;
+	padding: 1px 5px;
+	margin-right:  10px;
+	border: 1px solid #666D88;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.active_boton
+{
+	color:white;
+	border: 1px solid white;
+}
+.galeria 
+{
+	padding: 10px;
+}
+.galeria img
+{
+	cursor: pointer;
+	width: 100%;
+}
+.img_about
+{
+	cursor: pointer;
+	margin-top: 30px;
+}
+.about_us
+{
+	background: #eee;
+	padding: 30px;
+	color:#666D88;
+}
+.about_content p
+{
+	font-size: 12px;
+}
+.img_about_us
+{
+	cursor: pointer;
+	width: 100%;
+}
+.img_social
+{
+	cursor: pointer;
+	width: 12%;
+	margin-bottom: 50px;
+}
+.get_a_quote
+{
+	padding: 30px;
+	color: #F1D8DA;
+	margin-bottom: 30px;
+}
+.formulario input
+{
+	width: 100%;
+	padding: 10px 20px;
+	background: #D7564F;
+	border: 1px solid #D7564F;
+	margin-top: 15px;
+	color: #F37E80;
+	border-radius: 6px;
+}
+.formulario textarea
+{
+	width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	padding: 10px 20px;
+	background: #D7564F;
+	border: 1px solid #D7564F;
+	margin-top: 15px;
+	color: #F37E80;
+	border-radius: 6px;
+}
+::-webkit-input-placeholder
+{
+	color: #F37E80;
+}
+:-moz-placeholder 
+{    
+	color: #F37E80;
+}
+::-moz-placeholder 
+{    
+	color: #F37E80; 
+}
+:-ms-input-placeholder 
+{  
+      color: #F37E80;  
+}
+.contact p
+{
+	font-size: 10px;
+	text-align: justify;
+}
+.contact img
+{
+	cursor: pointer;
+	margin-right: 5px;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+.footer_pag
+{
+	background: #2D2F3B;
+	color: #666D88;
+	padding: 35px 30px 25px 30px;
+}
+.img_footer
+{
+	cursor: pointer;	
+	margin-top: -10px;
+	width: 18%;
+	float: right;
+}
+
+
+
